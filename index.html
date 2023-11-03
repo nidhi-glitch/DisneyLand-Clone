@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        <link rel="stylesheet" type="text/css" href="style2.css">
+        <link rel="stylesheet" type="text/css" href="style3.css">
+        <link rel="stylesheet" type="text/css" href="jarallax.css">
+        <link rel="stylesheet" type="text/css" href="style4.css">
+        <link rel="stylesheet" type="text/css" href="style5.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style6.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
+    <body>
+        <div class="banner">
+            <h2 id="text">Welcome to DisneyLand</h2>
+            <div class="clouds">
+                <img src="cloud1.png" style="--i:1;">
+                <img src="cloud2.png" style="--i:2;">
+                <img src="cloud3.png" style="--i:3;">
+                <img src="cloud4.png" style="--i:4;">
+                <img src="cloud5.png" style="--i:5;">
+                <img src="cloud1.png" style="--i:10;">
+                <img src="cloud2.png" style="--i:9;">
+            </div>
+        </div>
+        <section>
+            <h2>HEARTY WELCOME !!</h2>
+            <P>"Step into the extraordinary, where reality meets reverie, and the ordinary becomes obsolete. Welcome to a world unbound by the limits of the physical, where innovation and imagination meld to craft a realm unlike any other.
+                
+                In this ethereal sanctuary, prepare to be transported to dimensions of wonder and delight, where pixels and dreams intertwine. Your journey here will be nothing short of a digital odyssey, an adventure through the uncharted territories of our creative cosmos.
+                
+                Disneyland beckons you to relinquish your preconceptions and embrace the extraordinary. As you explore, be ready to encounter the unexpected, to become part of stories yet untold, and to be carried away by the symphony of colors and codes that define this unique realm.
+                
+                Dare to dream beyond the boundaries of the real, because here, in Disneyland, we've scripted a reality where the fantastic flourishes, and enchantment knows no bounds. Welcome to the genesis of a new age. Welcome to Disneyland!"</P>
+        </section>
+        <script type="text/javascript">
+            let text  = document.getElementById('text');
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                text.style.marginBottom = value * 2 + 'px';
+            })
+        </script>
+        <section>
+            <img src="bg1.jpg" id="bg">
+            <img src="man.png" id="man">
+            <img src="clouds_1.png" id="cloud_1">
+            <img src="clouds_2.png" id="cloud_2">
+            <img src="mountain_left.png" id="mountain_left">
+            <img src="mountain_right.png" id="mountain_right">
+        </section>
+        <section>
+            <h2>How to explore our Place</h2>
+            <p>"Embarking on a journey to explore Disneyland is akin to stepping through the looking glass into a world where reality intertwines with the fantastical. 
+                Prepare to surrender to the extraordinary, where every corner reveals a new dimension of enchantment. 
+                Meander through our digital pathways, where innovation meets imagination, and every pixel is a brushstroke in the canvas of wonder. 
+                From the immersive landscapes that beckon your curiosity to the interactive tales that invite your participation, Disneyland is a realm of limitless discovery. 
+                Discover hidden secrets, engage with captivating characters, and traverse the uncharted territories of our creative cosmos. 
+                Come, allow your senses to be ensnared by the magic that pulses through Disneyland's digital veins. 
+                This is not just a place; it's an odyssey into the future of storytelling and delight. 
+                It's time to explore, to dream, and to be part of an experience that transcends boundaries. 
+                The adventure begins with your curiosity and continues with your imagination – 
+                welcome to Disneyland."</p>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+        <script>
+            gsap.to("#bg",{
+                scrollTrigger : {
+                    scrub : 1
+                },
+                scale : 1.5
+            });
+            gsap.to("#man",{
+                scrollTrigger : {
+                    scrub : 1
+                },
+                scale : 0.5
+            });
+            gsap.to("#mountain_left",{
+                scrollTrigger : {
+                    scrub : 1
+                },
+                scale : -500
+            });
+            gsap.to("#mountain_right",{
+                scrollTrigger : {
+                    scrub : 1
+                },
+                scale : -500
+            });
+        </script>
+        <section>
+            <header>
+                <nav class="navigation">
+                    <a href="a">Contact Us<span></span></a>
+                </nav>
+            </header>
+            <section class ="parallax">
+                <img src="tree-left.png" id="tree-left">
+                <img src="tree-right.png" id="tree-right">
+                <img src="gate-left.png" id="gate-left">
+                <img src="gate-right.png" id="gate-right">
+                <img src="grass.png" id="grass">
+            </section>
+        </section>
+        <section class="sec">
+            <h2>Reach out its DisneyLand
+            </h2>
+            <p>
+                "At Disneyland, we are here for you. How can we assist you today?"
+                "We're here to help you. Reach out with any questions or concerns."
+                "Our team is just a message away. We're here for you!"
+                "Thank you for reaching out to our support team.
+                We want you to know that we are here for you, and we'll do our best to resolve your issue."
+                "You're not alone in this. We are here for you, and together, we'll find a solution."
+                "Welcome to Disneyland support! How can we assist you today?
+                We're here for you 24/7."
+                "Your satisfaction is our top priority, and we're here for you. 
+                How can we make your experience better?"
+                "Watch this video to learn more about our mission and how we're here for you every day. 
+                Your satisfaction is our goal."
+                "Our support team is available from 9 AM to 6 PM. 
+                But even outside these hours, we'll do our best to assist you because we're here for you."
+                "Discover the features of our latest product, and if you have any doubts or need guidance,
+                don't worry - we're here for you!"
+                "Got questions? We've got answers. 
+                Check our FAQ section, and if you can't find what you're looking for, remember, we're here for you."
+                "During difficult times, we stand by your side. 
+                We are here for you, providing support and assistance when you need it most."
+                "Unlock the full potential of your membership with Disneyland. Our support team is dedicated to ensuring your experience is flawless. 
+                We are here for you throughout your membership journey."
+                "We constantly strive to improve our services. Your feedback is crucial to us. Please take a moment to complete our survey and share your thoughts. 
+                Your opinion matters, and we want you to know that we are here for you."
+            </p>
+        </section>
+        <script src="script.js"></script>
+        <section>
+            <div class="box">
+                <h2 data-jarallax-element="0 200">Adventure lsle</h2>
+                <div class="container">
+                    <div class="imgbx jarallax">
+                        <img src="bk3.png" class="jarallax-img">
+                    </div>
+                    <div class="content" data-jarallax-element="-200 0">
+                        Welcome to Adventure Isle!<br>
+                        <br>Adventure Isle is the place for intrepid explorers, daring adventurers, and thrill-seekers of all ages. 
+                        Here, you'll embark on an incredible journey through a lush, exotic landscape filled with hidden treasures, 
+                        daring escapades, and the wonders of the great outdoors.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="box">
+                <h2 data-jarallax-element="0 200">Animal Safari Oasis</h2>
+                <div class="container">
+                    <div class="imgbx jarallax">
+                        <img src="bk4.png" class="jarallax-img">
+                    </div>
+                    <div class="content" data-jarallax-element="-200 0">
+                        Welcome to Animal Safari Oasis!<br>
+                        <br>Animal Safari Oasis is a place of wonder and excitement, where the boundaries between the human and animal worlds blur. 
+                        As you enter this enchanting realm, you will find yourself surrounded by lush vegetation, 
+                        authentic recreations of various habitats, and a symphony of animal sounds that beckon you to explore.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="box">
+                <h2 data-jarallax-element="0 200">Fantasy Fables Fair</h2>
+                <div class="container">
+                    <div class="imgbx jarallax">
+                        <img src="bk5.png" class="jarallax-img">
+                    </div>
+                    <div class="content" data-jarallax-element="-200 0">
+                        Welcome to Fantasy Fables Fair!<br>
+                        <br>Fantasy Fables Fair is a realm of enchantment, where the pages of your favorite fairy tales and fables spring to life.
+                        As you step into this dreamlike land, you'll be surrounded by charming cottages, 
+                        cobblestone pathways, and the magical atmosphere of stories waiting to be discovered.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="box">
+                <h2 data-jarallax-element="0 200">Pixie Hollow Park</h2>
+                <div class="container">
+                    <div class="imgbx jarallax">
+                        <img src="bk6.png" class="jarallax-img">
+                    </div>
+                    <div class="content" data-jarallax-element="-200 0">
+                        Welcome to Pixie Hollow Park!<br>
+                        <br>Pixie Hollow Park is a place of enchantment, where the wonders of nature and the magic of fairies come together in perfect harmony. 
+                        As you step into this world, you'll be surrounded by towering blades of grass,
+                        oversized flowers, and the delightful presence of beloved fairy friends.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="box">
+                <h2 data-jarallax-element="0 200">Mythical Creatures Cove</h2>
+                <div class="container">
+                    <div class="imgbx jarallax">
+                        <img src="bk7.png" class="jarallax-img">
+                    </div>
+                    <div class="content" data-jarallax-element="-200 0">
+                        Welcome to Mythical Creatures Cove!<br>
+                        <br>Mythical Creatures Cove is a realm of awe and wonder, where the mystical and the legendary walk among us. 
+                        As you enter this mystical land, you'll be surrounded by ancient ruins, lush forests, 
+                        and enchanting creatures waiting to be discovered.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="jarallax.js"></script>
+        <script src="jarallax-element.js"></script>
+        <script type="text/javascript">
+            jarallax(document.querySelectorAll('.jarallax'), {
+                speed: 0.6,
+            });
+        </script>
+        <section class="banner__container">
+            <div class="section__container">
+            <div class="banner__content">
+                <h2>Discount 10-30% Off</h2>
+                <p>
+                Travel the world on a budget with our unbeatable discounted travel
+                deals. Whether you're looking for a last-minute escape or planning
+                ahead, we've got you covered with incredible discounts on flights,
+                hotels, and packages. Don't wait, book now and experience the
+                adventure of a lifetime without breaking the bank.
+                </p>
+                <button>See Tours</button>
+            </div>
+            </div>
+        </section>
+            <div class="container">
+                <form class="form-group">
+                    <div id="form">
+                        <h1 class="text-white text-center">Booking Resort Now</h1>
+        
+                        <div id="first-group">
+        
+                            <div id="content">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <input type="text" id="input-group" placeholder="First name">
+                            </div>
+        
+                            <div id="content">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <input type="number" id="input-group" placeholder="Phone number">
+                            </div>
+        
+                            <div id="content">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <input type="text" id="input-group" placeholder="Departure Date">
+                            </div>
+        
+                            <div id="content">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                <select id="input-group" style="background-color: black;">
+                                    <option value="">No.of guests</option>
+                                    <option value="">1-5</option>
+                                    <option value="">6-10</option>
+                                    <option value="">11-20</option>
+                                </select>
+                            </div>
+        
+                        </div>
+        
+                        <div id="second-group">
+        
+                            <div id="content">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <input type="text" id="input-group" placeholder="Last name">
+                            </div>
+        
+                            <div id="content">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <input type="email" id="input-group" placeholder="Email">
+                            </div>
+        
+                            <div id="content">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <input type="text" id="input-group" placeholder="Arrival Date">
+                            </div>
+        
+                            <div id="content">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                <select id="input-group" style="background-color: black;">
+                                    <option value="">Room Type</option>
+                                    <option value="">AC</option>
+                                    <option value="">Non-AC</option>
+                                    <option value="">Single Bed</option>
+                                    <option value="">Double Bed</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" value="Submit" id="submit-btn">Book Now</button>
+                    </div>
+                </form>
+            </div>
+            <section class="services" id="services">
+                <div class="heading">
+                    <h3>Services</h3>
+                    <img src="travel1.png" alt="">
+                </div>
+                    <div class="card-content">
+                        <div class="row">
+                            <i class="fas fa-globe-asia"></i>
+                            <div class="card-body">
+                                <h3>Around The World</h3>
+                                <p>When you step into Disneyland, you're not just visiting a theme park; 
+                                    you're embarking on a journey around the world. 
+                                    The magic of Disneyland is not limited to the iconic Sleeping Beauty Castle; 
+                                    it extends to every corner of the park, taking you on a global adventure filled with enchantment and wonder.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-plane"></i>
+                            <div class="card-body">
+                                <h3>Fastest Travel</h3>
+                                <p>Disneyland is not only about fairy tales and whimsical characters; 
+                                    it's also a destination for thrill-seekers looking for adrenaline-pumping experiences. 
+                                    If you're ready to embark on a high-speed adventure, you've come to the right place.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-hotel"></i>
+                            <div class="card-body">
+                                <h3>Affordable Hotels</h3>
+                                <p>At Disneyland, we believe that every guest should have the opportunity to experience the magic of the park without worrying about their budget. 
+                                    That's why we've curated a list of affordable hotels that offer comfort, convenience, and a dash of Disney enchantment.</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="contact" id="contact">
+                <div class="contact-text">
+                    <h2>Get In <span>Touch</span></h2>
+                    <p>
+                        At Disneyland, we're dedicated to providing you with the most magical experiences, and we're here to assist you in every way we can.
+                        Whether you have questions, feedback, or require assistance, our friendly and knowledgeable team is ready to help.
+                        Visit our official website for the latest information, news, and updates about Disneyland. 
+                    </p>
+                    <div class="list">
+                        <li><a href="#">+926-897-6539</a></li>
+                        <li><a href="#">Disneyland@gmail.com</a></li>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="#">
+                        <input type="text" placeholder="Name" required>
+                        <input type="number" placeholder="Phone" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea name="" id="" cols="35" rows="10" placeholder="Message" required></textarea>
+                        <input type="submit" value="Send" class="submit" required>
+                    </form>
+                </div>
+            </section>
+            <!-- Contact Section End -->
+            <footer id="footer">
+                <div class="footer-content">
+                    <div class="row" id="row1">
+                        <a href="#" id="footer-logo">Travel Agency</a>
+                        <p>Are you ready to embark on your magical Disneyland adventure? Contact Magical Adventures Travel Agency, and let us turn your dreams into reality. Whether you're a first-time visitor or a seasoned Disney fanatic, we'll ensure your trip to Disneyland is nothing short of enchanting.
+
+                            Don't wait – the magic is calling, and we're here to help you answer that call. Get in touch with us today to start planning your dream Disneyland getaway.
+                            At Magical Adventures Travel Agency, we understand that a trip to Disneyland is more than just a vacation; it's a journey into a world of enchantment and wonder. We specialize in creating unforgettable experiences for families, couples, and Disney enthusiasts of all ages who wish to explore the magic of Disneyland.</p>
+                        <div class="socail-links">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
+</html>
